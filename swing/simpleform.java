@@ -1,10 +1,10 @@
 import java.awt.event.*;
 import javax.swing.*;
 
-public class form2 {
+public class simpleform {
     public static void main(String args[]) {
 
- JFrame f = new JFrame("Simple Form");
+        JFrame f = new JFrame("Simple Form");
 
         JLabel l1 = new JLabel("Enter Name:");
         l1.setBounds(50, 50, 80, 30);
@@ -17,14 +17,12 @@ public class form2 {
 
         JLabel l2 = new JLabel();
         l2.setBounds(50, 150, 200, 30);
-
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String name = t1.getText();
                 l2.setText("Hello, " + name);
             }
         });
-
         f.add(l1);
         f.add(t1);
         f.add(b1);
