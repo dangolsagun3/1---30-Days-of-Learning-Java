@@ -2,11 +2,11 @@ package projecttt;
 import java.util.Scanner;
 public class Sentence {
 
-    public static void main(String[] args) {
+    public static void main(StringBufferDemo[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a sentence: ");
-        String sentence = sc.nextLine();
+        StringBufferDemo sentence = sc.nextLine();
 
         if (sentence.length() == 0) {
             System.out.println("Sentence is empty!");
