@@ -13,30 +13,24 @@ public class FactorialCube extends JFrame {
         setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Input Label
         inputLabel = new JLabel("Enter a number:");
         inputLabel.setBounds(20, 20, 120, 25);
         add(inputLabel);
 
-        // Text Field
         textField = new JTextField();
         textField.setBounds(150, 20, 150, 25);
         add(textField);
 
-        // Button
         resultButton = new JButton("Result");
         resultButton.setBounds(100, 60, 120, 30);
         add(resultButton);
 
-        // Result Label
         resultLabel = new JLabel("");
         resultLabel.setBounds(20, 110, 300, 25);
         add(resultLabel);
 
-        // Mouse Listener
         resultButton.addMouseListener(new MouseAdapter() {
 
-            // When mouse is pressed → Factorial
             public void mousePressed(MouseEvent e) {
                 try {
                     int num = Integer.parseInt(textField.getText());
@@ -57,7 +51,6 @@ public class FactorialCube extends JFrame {
                 }
             }
 
-            // When mouse is released → Cube
             public void mouseReleased(MouseEvent e) {
                 try {
                     int num = Integer.parseInt(textField.getText());
